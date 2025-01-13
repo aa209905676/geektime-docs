@@ -1,5 +1,14 @@
 {
   "buildCommand": "pip install mkdocs-material && mkdocs build",
   "outputDirectory": "site",
-  "installCommand": "pip install mkdocs-material"
+  "installCommand": "pip install mkdocs-material",
+  "builds": [
+    {
+      "src": "**",
+      "use": "@vercel/static-build",
+      "config": {
+        "runtime": "python3"
+      }
+    }
+  ]
 }
