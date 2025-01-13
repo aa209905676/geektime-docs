@@ -1,0 +1,32 @@
+site_name: 极客时间课程
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# 导航
+nav:
+  - 说透中台: 
+    - 'docs/index.md'
+    - 'docs/大厂中台系统的尴尬之处.md'
+    - 'docs/中台概念.md'
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
